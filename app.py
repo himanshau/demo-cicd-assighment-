@@ -4,8 +4,7 @@ import base64
 app = Flask(__name__)
 
 # Base64-encoded image string
-image_base64 = "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIg..."
-
+image_base64 = "https://img.freepik.com/free-vector/done-concept-illustration_114360-3060.jpg?t=st=1741275352~exp=1741278952~hmac=4b3f66c9c69bdab4ff9c46fcd2091e15ce99d93d674e84d526eaff193c829ea9&w=900"
 @app.route("/")
 def home():
     return render_template("index.html", image_data=image_base64)
